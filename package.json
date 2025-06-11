@@ -1,0 +1,25 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "MEAN stack crud app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "*",
+    "bootstrap": "^5.3.3",
+    "cors": "*",
+    "express": "*",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "^4.0.1"
+  },
+  "author": "Anushka Rai",
+  "license": "ISC"
+}

@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary header">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" i18n="@@construction1"><b>EMPLOYEE PORTAL</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="employees" i18n="@@construction2">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="emp-list" i18n="@@construction3">Employee List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="add-emp" i18n="@@construction4">Add Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="update-emp" i18n="@@construction5">Update Employee</a>
+        </li>
+        <router-outlet></router-outlet>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="register" i18n="@@construction6">Register</a>
+        </li>
+        <li class="nav-item"  >
+            <a class="nav-link" routerLink="/login" i18n="@@construction7">Login</a>
+          </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" routerLink="profile" i18n="@@construction8">Profile</a>
+        </li>
+        <li class="nav-item"  >
+          <a class="nav-link" (click)="onLogoutClick()" i18n="@@construction9">Logout</a>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link btn btn-primary" (click)="switchLanguage('nl')">Dutch</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link btn btn-primary" (click)="switchLanguage('fr')">French</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link btn btn-primary" (click)="switchLanguage('en')">English</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

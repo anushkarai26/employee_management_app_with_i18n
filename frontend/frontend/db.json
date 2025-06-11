@@ -1,0 +1,12 @@
+
+     {
+        "user":  {
+            "Name":"Anushka Rai",
+            "email":"admin@gmail.com",
+            "username":"admin",
+            "password":"admin@123",
+            "role":"admin",
+            "isActive":true
+
+        }
+    }

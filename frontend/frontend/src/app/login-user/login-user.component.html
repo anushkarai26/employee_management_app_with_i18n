@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center min-vh-100">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="page-header text-center" i18n="@@login1">LOGIN</h4>
+        </div>
+        <div class="card-body">
+          <form (submit)="onLogin()">
+            <div class="form-group">
+              <label for="username" i18n="@@listHeader4">Username</label>
+              <input type="text" id="username" [(ngModel)]="log.username" name="username" class="form-control" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+              <label for="password" i18n="@@login2">Password</label>
+              <input type="password" id="password" [(ngModel)]="log.password" name="password" class="form-control" placeholder="Enter your password">
+            </div>
+            <div class="text-center" >
+              <button type="submit" class="btn btn-primary btn-lg" i18n="@@construction7">Login</button>
+            </div>
+            <div>
+              <p><span i18n="@@login3">Dont have an account?</span>
+                <a routerLink="/register" routerLinkActive="router-link-active" i18n="@@login4">Sign up </a>
+              </p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

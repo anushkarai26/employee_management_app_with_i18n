@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1 i18n = "Card Header|Title for the under construction card@@constructionHeader">Employee Management Application</h1>
+    <p class="lead" i18n="Card Descritpion|A description for the under construction card. @@constructionDescription">Manage your employee database with ease</p>
+    <div class="button-container">
+      <nav>
+        <a class="btn btn-primary btn-lg" routerLink="/register" i18n="@@constructionbuttonR" >Register</a>
+        <a class="btn btn-secondary btn-lg" routerLink="/login" i18n="@@constructionbuttonL">Login</a>
+      </nav>
+    </div>
+  </div>
+  
+  <section class="info-section">
+    <h4 i18n="@@constructionQue">How does the Employee Management Application Work?</h4>
+    <p i18n=" @@constructionA18">Angular 18's AuthGuard restricts access to certain routes or components based on the roles assigned to the authenticated users.</p>
+    <ul>
+      <li i18n="@@constructionl1">If the user's role is Admin, they will be able to add and update the Employee database.</li>
+      <li i18n="@@constructionl2">If the user's role is User, they'll be able to view Homepage and their Profile 
+        but will be denied access to manage the Employee database.</li>
+      <li i18n=" @@constructionl3">If the user is not logged in, they will be denied access and would have to login first.</li>
+    </ul>
+  </section>
+</div>
+

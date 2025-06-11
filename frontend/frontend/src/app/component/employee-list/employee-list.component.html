@@ -1,0 +1,44 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header bg-secondary text-white">
+            <h5 class="card-title m-0" i18n="@@construction3">Employee List</h5>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered text-center">
+                <thead>
+                  <tr>
+                    <th i18n="@@listHeader2">Employee ID</th>
+                    <th i18n="@@listHeader3">Name</th>
+                    <th i18n="@@listHeader4">Username</th>
+                    <th i18n="@@listHeader5">Designation</th>
+                    <th i18n="@@listHeader6">Department</th>
+                    <th i18n="@@listHeader7">Email</th>
+                    <th i18n="@@listHeader8">Phone No</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    @for(item of employeeList; track $index){
+                        <tr>
+                            <td>{{$index+1}}</td>
+                            <td>{{item.Name}}</td>
+                            <td>{{item.username}}</td>
+                            <td>{{item.Designation}}</td>
+                            <td>{{item.Department}}</td>
+                            <td>{{item.email}}</td>
+                            <td>{{item.PhoneNo}}</td>
+
+                        </tr>
+
+                     }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,16 @@
+<div *ngIf="user" class="container">
+    <h2 class="page-header text-center" style="font-family: Arial, sans-serif" i18n="@@profile1"> Hello, {{user.Name}} , welcome!</h2>
+    <ul class="list-group">
+        <li class="list-group-item" style="font-family: Arial, sans-serif" i18n="@@profile2">
+            <B>Username</B>: {{user.username}}
+        </li>
+        <li class="list-group-item" style="font-family: Arial, sans-serif" i18n="@@profile3">
+           <b>Email</b>: {{user.email}}
+        </li>
+        <li class="list-group-item" style="font-family: Arial, sans-serif" i18n="@@profile4">
+            <B>Role</B>: {{user.role}}
+        </li>      
+    </ul>
+</div>
+
+  

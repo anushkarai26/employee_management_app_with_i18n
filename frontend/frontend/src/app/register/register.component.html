@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center min-vh-100">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="page-header text-center" i18n="@@register1">REGISTER</h4>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="name" i18n="@@listHeader3">Name</label>
+              <input type="text" id="name" [(ngModel)]="add.Name" name="Name" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email" i18n="@@listHeader7">Email</label>
+              <input type="email" id="email" [(ngModel)]="add.email" name="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="username" i18n="@@listHeader4">Username</label>
+              <input type="text" id="username" [(ngModel)]="add.username" name="username" class="form-control" placeholder="Enter a username">
+            </div>
+            <div class="form-group">
+              <label for="password" i18n="@@login2">Password</label>
+              <input type="password" id="password" [(ngModel)]="add.password" name="password" class="form-control" placeholder="Enter a password">
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success btn-lg" (click)="onSubmit()" i18n="@@register2">Submit</button>
+            </div>
+            <div>
+              <p><span i18n="@@register3">Already have an account?</span>
+                <a routerLink="/login" routerLinkActive="router-link-active" i18n="@@register4">Login Here </a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
